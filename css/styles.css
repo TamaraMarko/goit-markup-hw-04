@@ -1,9 +1,12 @@
 :root {
   --accent-color: #4D5AE5;
+  --pressed-color:#404BBF;
+  --success-color:#31D0AA;
+  --dark-color: #2E2F42;
   --white-color: #fff;
   --black-color: #000;
-  --title-color: #212121;
-  --subtitle-color: #757575;
+  --title-color: #434455;
+  --subtitle-color: #8E8F99;
   --footer-color:  #2F303A;
   --icons-color: #AFB1B8;
 }
@@ -71,19 +74,19 @@ line-height: 24px;
   margin-left: 50px;
 }
 .nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
+font-weight: 500;
+font-size: 16px;
+line-height: calc(24/16);
+letter-spacing: 0.02em;
+color: var(--dark-color);
   padding: 32px 0;
   display: block;
 }
 .nav-link:hover{
-  color: var(--accent-color);
+  color: var(--pressed-color);
 }
 .nav-link:focus {
-  color: var(--accent-color);
+  color: var(--pressed-color);
 }
 .nav-item {
   padding: 0;
@@ -136,10 +139,10 @@ line-height: 24px;
 }
 .header-link {
   display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(24/16);
+letter-spacing: 0.02em;
   padding: 32px 0;
   color: var(--subtitle-color);
   align-items: center;
@@ -148,7 +151,7 @@ line-height: 24px;
   display: flex;
 }
 .hero {
-  background-color: #2F303A;
+  background: #2E2F42;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -158,41 +161,44 @@ line-height: 24px;
 }
 .overlay {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)), url(../images_index/people-office.jpg);
-  max-width: 1600px;
+  max-width: 1440px;
   margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-title {
   width: 696px;
   margin: 0 auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+font-weight: 700;
+font-size: 56px;
+line-height: calc(60/56);
+/* or 107% */
+
+text-align: center;
+letter-spacing: 0.02em;
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: var(--white-color);
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
 .hero-button { 
   font-family: 'Roboto';
   font-style: normal;
   border: 0;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: calc(24/16);
+  letter-spacing: 0.04em;
   color: var(--white-color);
   background: var(--accent-color);
   border-radius: 4px;
-  padding: 10px 24px;
-  width: 216px;
- 
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.hero-button:hover .hero-button:focus {
-  background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.hero-button:hover ,.hero-button:focus {
+  background-color: var(--pressed-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 .btn {
   cursor: pointer;
 }
@@ -209,7 +215,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: -1px;
 }
 .features {
-  padding: 94px 0;
+  padding: 120px 0;
 }
 .features-list {
   margin: 0;
@@ -223,6 +229,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .features-cntr {
   background-color: #F5F4FA;
+  width: 264px;
   height: 112px;
   display: flex;
   justify-content: center;
@@ -231,33 +238,34 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .features-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-  margin: 8x auto;
+  margin: 8px auto;
+font-weight: 500;
+font-size: 20px;
+line-height: calc(24/20);
+letter-spacing: 0.02em;
+  color: var(--dark-color);
 }
 .features-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--subtitle-color);
+font-weight: 400;
+font-size: 16px;
+line-height: calc(24/16);
+letter-spacing: 0.02em;
+  color: var(--title-color);
   margin: 0;
 }
 .skills {
-  padding-bottom: 94px;
+  padding-bottom: 120px;
 }
 .skills-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 .skills-list {
   margin: 0;
@@ -274,23 +282,25 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 .team {
   background: #F5F4FA;
-  margin-top: 95px;
   padding-bottom: 95px;
-  padding-top: 95px;
+}
+.team-cntr {
+  padding-top: 120px;
 }
 .team-title{
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+  line-height: calc(40/36);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
   text-align: center;
   margin: 0;
 }
 
 .team-list {
   display: flex;
-  margin-top: 50px;
+  margin-top: 72px;
   padding: 0;
   justify-content: center;
   gap: 30px;
