@@ -19,7 +19,7 @@ body {
   color: var(--subtitle-color);
 }
 .container {
-  width: 1200px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -328,8 +328,6 @@ letter-spacing: 0.02em;
 .team-icon-iteam {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
 }
 .team-card-icon {
   fill: var(--white-color);
@@ -343,16 +341,16 @@ letter-spacing: 0.02em;
   justify-content: center;
   width: 100%;
     height: 100%;
+    border-radius: 50%;
+  background-color: var(--accent-color);
 }
 .team-icon-link:hover{
   border-radius: 50%;
-  background-color: var(--accent-color);
-  fill: var(--white-color);
+  background-color: var(--pressed-color);
 }
 .team-icon-link:focus{
   border-radius: 50%;
-  background-color: var(--accent-color);
-  fill: var(--white-color);
+  background-color: var(--pressed-color);
 }
 /* .team-icon-link:hover {
   color: var(--white-color);
@@ -366,10 +364,10 @@ letter-spacing: 0.02em;
 
 .team-subtitle {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+  font-size: 20px;
+  line-height: calc(24/20);
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -377,23 +375,24 @@ letter-spacing: 0.02em;
 .team-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+  line-height: 24px;
+  letter-spacing: 0.02em;
   color: var(--subtitle-color);
   text-align: center;
   margin: 8px auto;
 }
 .partners {
-  padding: 94px 0;
+  padding: 130px 0 120px;
 }
 .partners-title {
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0 0 50px 0;
+  color: var(--dark-color);
+font-weight: 700;
+font-size: 36px;
+line-height: calc(40/36);
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+  margin: 0 0 72px 0;
 }
 .partners-list {
   margin: 0;
@@ -404,8 +403,8 @@ letter-spacing: 0.02em;
   justify-content: center;
 }
 .partners-item {
-  width: 170px;
-  height: 92px;
+  width: 198px;
+  height: 88px;
 
 }
 .partners-item:hover {
@@ -415,15 +414,15 @@ letter-spacing: 0.02em;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--icons-color);
+  fill: var(--subtitle-color);
   width: 100%;
   height: 100%;
-  border: 1px solid var(--icons-color);
+  border: 1px solid var(--subtitle-color);
 border-radius: 4px;
 }
 .partners-link:hover {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  fill: var(--pressed-color);
+  border: 1px solid var(--pressed-color);
 border-radius: 4px;
 }
 .partners-link:focus{
@@ -475,7 +474,7 @@ color: #E7E9FC;
   color: var(--white-color); 
 }
 .social-cntr {
-  margin-left: 94px;
+  margin-left: 120px;
 }
 .footer-kid {
   display: flex;
@@ -500,7 +499,7 @@ letter-spacing: 0.02em;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 10px;
+  gap: 16px;
 }
 .footer-social-item {
   width: 100%;
@@ -521,12 +520,12 @@ letter-spacing: 0.02em;
 }
 .footer-icons-link:hover {
   border-radius: 50%;
-  background-color: var(--accent-color);
+  background-color: var(--success-color);
 
 }
 .footer-icons-link:focus {
   border-radius: 50%;
-  background-color: var(--accent-color);
+  background-color: var(--success-color);
 
 }
 .footer-icons {
@@ -536,7 +535,7 @@ letter-spacing: 0.02em;
 
 
 .section-main {
-  padding: 94px 0;
+  padding: 96px 0;
   display: block;
 }
 .btn-list {
@@ -544,10 +543,10 @@ letter-spacing: 0.02em;
   justify-content: center;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 .btn-item:not(:first-child) {
-  margin-left: 10px;
+  margin-left: 24px;
 }
 .btn-nav {
   font-weight: 500;
@@ -561,7 +560,7 @@ letter-spacing: 0.02em;
   background: #F4F4FD;
   border-radius: 4px;
   border: 0.000001px;
-  padding: 6px 22px 6px 22px;
+  padding: 12px 24px;
 }
 .btn-nav:hover{
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -569,7 +568,7 @@ letter-spacing: 0.02em;
 .btn-nav:focus{
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.btn-nav-accent {
+.accent-btn {
   background-color: var(--accent-color);
   color: var(--white-color);
   font-weight: 500;
@@ -579,7 +578,7 @@ letter-spacing: 0.02em;
   letter-spacing: 0.03em;
   border-radius: 4px;
   border: 0.000001px;
-  padding: 6px 22px 6px 22px;
+  padding: 12px 24px;
 }
 .btn-nav-accent:hover  {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -602,50 +601,59 @@ letter-spacing: 0.02em;
   display: block;
 }
 .gallery-item-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery-item-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.foto-cntr{
+.foto-cntr-port {
+  padding: 32px 16px;
+  border: 1px solid #E7E9FC;
+    border-top: none;
   border: 1px solid #E7E9FC;
   border-top: none;
 }
 .gllr-cntr {
   margin-top: -30px;
   margin-left: -30px;
+  
 }
 .gallery {
   padding: 0;
   margin: 0; 
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: -48px;
+  margin-left: -24px;
   justify-content: center;
 }
 .gallery > .gallery-item {
   padding: 0;
   margin: 0;
   display: block;
-  
-  margin-left: 25px;
-  margin-top: 50px;
+  width: 360px;
+  height: 420px;
+  margin-left: 24px;
+  margin-top: 48px;
 }
 .gallery-subtitle {
- font-weight: 700; 
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-color); 
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24/20);
+  /* identical to box height, or 120% */
+  
+  letter-spacing: 0.02em;
+  color: var(--dark-color); 
   margin: 0;
   
 }
 .gallery-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.03em;
+  line-height: calc(24/16);
+  /* identical to box height, or 150% */
+  
+  letter-spacing: 0.02em;
   color: var(--subtitle-color);
   margin: 0;
 }
